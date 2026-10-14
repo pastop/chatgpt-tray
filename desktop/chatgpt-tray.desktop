@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=ChatGPT Usage
+Comment=Статистика лимитов подписки Codex
+Exec=/opt/usr/chatgpt_tray/desktop/src-tauri/target/release/chatgpt-tray
+Icon=dev.pastop.chatgpt-tray
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=chatgpt-tray
+NoDisplay=true

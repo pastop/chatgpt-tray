@@ -1,0 +1,155 @@
+
+:root {
+  font-family: Inter, "Noto Sans", system-ui, sans-serif;
+  color: #e5e7eb;
+  background: #111318;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.dashboard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.header,
+.usage-heading,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: #9399a7;
+}
+
+.connection {
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 7px 10px;
+  background: #353942;
+  white-space: nowrap;
+}
+
+.connection.online {
+  color: #62d49c;
+  background: #193b2b;
+}
+
+.connection.offline {
+  color: #ff9a9a;
+  background: #4a2427;
+}
+
+.usage-card {
+  background: #1c2028;
+  border: 1px solid #303541;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.usage-heading h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.usage-heading strong {
+  font-size: 27px;
+  font-variant-numeric: tabular-nums;
+}
+
+.progress-track {
+  width: 100%;
+  height: 10px;
+  background: #363c47;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 300ms ease;
+}
+
+.progress-fill.good {
+  background: #26a269;
+}
+
+.progress-fill.warning {
+  background: #e5a50a;
+}
+
+.progress-fill.critical {
+  background: #e01b24;
+}
+
+.reset {
+  font-size: 12px;
+  color: #9da4b3;
+  margin: 12px 0 0;
+}
+
+.error {
+  font-size: 12px;
+  color: #ff9a9a;
+  background: #3d2227;
+  padding: 12px;
+  border-radius: 9px;
+  overflow-wrap: anywhere;
+}
+
+.error[hidden] {
+  display: none;
+}
+
+.footer {
+  margin-top: 6px;
+  color: #9da4b3;
+  font-size: 12px;
+}
+
+button {
+  border: 0;
+  border-radius: 9px;
+  background: #303b50;
+  color: #f1f5f9;
+  padding: 11px 16px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #40516e;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
